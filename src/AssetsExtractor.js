@@ -42,7 +42,7 @@ var Css_Loader_Reg_DEV = /\bn?(?:exports|___CSS_LOADER_EXPORT___)\.push\(\[modul
 
 //css-loader:  n.exports=t("FZ+f")(!1)).push([n.i,"\n.payment-type[data-v-ffb10066] {......}\n",""])
 var Css_Loader_Reg_UGLY = /\.push\(\[\w+\.i,['"](.+?\})[\\rn]*['"],['"]['"](?:\]\)|,\{)/g;
-var CssExtReg = /\.css$/i, JsExtReg = /\.js$/i
+var CssExtReg = /\.css(\?.+)?$/i, JsExtReg = /\.js(\?.+)?$/i
 
 module.exports = function AssetsExtractor(options) {
     this.extractor = new Extractor(options)

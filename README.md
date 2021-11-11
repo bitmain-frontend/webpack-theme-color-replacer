@@ -1,3 +1,6 @@
+# Forked from https://github.com/bitmain-frontend/webpack-theme-color-replacer
+fixed support css and js in assets that has query
+
 This plugin can extract theme color styles from all the outputed css files (such as element-ui theme colors), and make a 'theme-colors.css' file which only contains color styles. At runtime in your web page, the client part will help you to download this css file, and then replace the colors into new customized colors dynamicly.
 
 Preview:    
